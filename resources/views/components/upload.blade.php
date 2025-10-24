@@ -1,43 +1,4 @@
-<nav x-data="{ open: false }" class="flex items-center justify-between max-w-7xl mx-auto px-6">
-    <a href="/">
-        <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-orange-600" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 4v16m8-8H4" />
-            </svg>
-            <h1 class="text-2xl font-bold text-orange-600">CELZ5</h1>
-        </div>
-    </a>
-
-    {{-- Desktop Links --}}
-    <div class="hidden md:flex space-x-8 text-sm font-medium">
-        <a href="#features" class="hover:text-orange-600 transition">Features</a>
-        <a href="#how" class="hover:text-orange-600 transition">How It Works</a>
-        <a href="#contact" class="hover:text-orange-600 transition">Contact</a>
-    </div>
-
-    {{-- Mobile Menu Button --}}
-    <button @click="open = !open" class="md:hidden focus:outline-none">
-        <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-orange-600" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-orange-600" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12" />
-        </svg>
-    </button>
-
-    {{-- Mobile Menu --}}
-    <div x-show="open" x-transition class="absolute top-[70px] left-0 w-full bg-white px-6 py-4 flex flex-col space-y-4 text-sm font-medium md:hidden shadow">
-        <a href="#features" class="hover:text-orange-600 transition">Features</a>
-        <a href="#how" class="hover:text-orange-600 transition">How It Works</a>
-        <a href="#contact" class="hover:text-orange-600 transition">Contact</a>
-    </div>
-</nav>
+   @include('partials.navbar')
 <br>
 <br>
 <x-layouts.app>

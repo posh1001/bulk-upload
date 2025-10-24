@@ -32,3 +32,15 @@ Route::post('/logout', function () {
     Auth::logout();
     return redirect()->route('login');
 })->name('logout');
+
+Route::get('features', function () {
+    return view('features');
+});
+
+Route::get('how', function () {
+    return view('how-it-works');
+});
+
+Route::get('contact', function () {
+    return view('contact');
+});

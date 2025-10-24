@@ -6,29 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CELZ5 Database Upload</title>
     @vite('resources/css/app.css')
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body class="bg-gradient-to-br from-orange-50 via-white to-orange-100 text-gray-800 antialiased">
 
     <!-- Navbar -->
-    <nav class="flex items-center justify-between max-w-7xl mx-auto px-6 py-4">
-        <a href="/">
-        <div class="flex items-center space-x-2">
-             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-orange-600" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 4v16m8-8H4" />
-            </svg>
-            <h1 class="text-2xl font-bold text-orange-600">CELZ5</h1>
-
-        </div>
-          </a>
-        <div class="hidden md:flex space-x-8 text-sm font-medium">
-            <a href="#features" class="hover:text-orange-600 transition">Features</a>
-            <a href="#how" class="hover:text-orange-600 transition">How It Works</a>
-            <a href="#contact" class="hover:text-orange-600 transition">Contact</a>
-        </div>
-    </nav>
+   @include('partials.navbar')
 
     <!-- Hero Section -->
     <section class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20">
